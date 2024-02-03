@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML  Form </title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+        html {
+          font-family: "jost", sans-serif;
+          background-color: #efefef;
+        }
+        h1 {
+          font-weight: bold;
+        }
+    
+        .sameclass {
+          background-color: red;
+        }
+      </style>
+</head>
+<body>
+    <form action="#">
+        <label for="password"></label>
+        <div>
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="sameclass"
+              placeholder="Enter your password"
+            />
+          </div>
+          <div>
+            <label for="number">max subject</label>
+            <input
+              type="number"
+              class="sameclass"
+              id="number"
+              max="5"
+              min="1"
+              value="1"
+            />
+          </div>
+
+          <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="male" /> Male
+            <input type="radio" name="gender" value="female" /> Female
+          </div>
+          <div>
+            <label for="hobbies"> Fav Hobbies: </label>
+            <input type="checkbox" name="interest" value="music" /> Music
+            <input type="checkbox" name="interest" value="sports" /> Sports
+          </div>
+    
+          <div>
+            <label for="country">Fav Country: </label>
+            <select name="country" id="country">
+              <option value="usa">USA</option>
+              <option value="canada">Canada</option>
+              <option value="uk">UK</option>
+            </select>
+          </div>
+          <div>
+            <label for="country">Select a Country:</label>
+            <input type="text" id="country" name="country" list="countries" />
+            <datalist id="countries">
+              <option value="usa">USA</option>
+              <option value="canada">Canada</option>
+              <option value="uk">UK</option>
+            </datalist>
+          </div>
+          <div>
+            <label for="comment"> Message Us: </label>
+            <textarea
+              name="comments"
+              rows="10"
+              cols="100"
+              placeholder="Enter your comments"
+            ></textarea>
+          </div>
+
+          <div>
+            <label for="file">Select File</label>
+            <input type="file" name="fileUpload" />
+          </div>
+    
+          <input type="submit" value="Submit" />
+          <!-- or -->
+          <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
